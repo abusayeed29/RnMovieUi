@@ -11,9 +11,10 @@ import {
 } from 'react-native';
 import { styles } from '../theme';
 
+const ios = Platform.OS == 'ios';
 var {width, height} = Dimensions.get('window');
 
-export default function MovieList({title, data}) {
+export default function MovieList({title, data, hideSeeAll}) {
   let movieName = 'Ant-man and the wasp quantumania';
   const navigation = useNavigation();
 
@@ -21,11 +22,14 @@ export default function MovieList({title, data}) {
     <View className="mb-8 space-y-4">
       <View className="mx-4 flex-row justify-between items-center">
         <Text className="text-white text-xl">{title}</Text>
-        <TouchableOpacity>
-          <Text style={styles.text} className="text-lg">
-            See All
-          </Text>
-        </TouchableOpacity>
+
+        {!hideSeeAll && (
+          <TouchableOpacity>
+            <Text style={styles.text} className="text-lg">
+              See All
+            </Text>
+          </TouchableOpacity>
+        )}
       </View>
       {/* Movie row */}
       <ScrollView

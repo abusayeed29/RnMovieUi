@@ -10,6 +10,8 @@ npm add nativewind
 npm  add --dev tailwindcss
 npx tailwindcss init
 
+npm i react-native-linear-gradient
+
 content: [
     './App.{js,jsx,ts,tsx}',
     './screens/**/*.{js,jsx,ts,tsx}',
