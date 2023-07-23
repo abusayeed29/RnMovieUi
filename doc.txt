@@ -1,0 +1,17 @@
+1. Nativewind
+2. Heroicons
+3. react native snap carousel
+4. Expo Linear Gradient
+5. React-native-progress
+6. Axios
+7. TMDB Movie Api
+
+npm add nativewind
+npm  add --dev tailwindcss
+npx tailwindcss init
+
+content: [
+    './App.{js,jsx,ts,tsx}',
+    './screens/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
+  ],
