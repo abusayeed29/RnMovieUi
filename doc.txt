@@ -6,11 +6,15 @@
 6. Axios
 7. TMDB Movie Api
 
+https://www.themoviedb.org/
+
 npm add nativewind
 npm  add --dev tailwindcss
 npx tailwindcss init
 
 npm i react-native-linear-gradient
+
+npm i react-native-progress
 
 content: [
     './App.{js,jsx,ts,tsx}',
